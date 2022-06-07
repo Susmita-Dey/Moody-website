@@ -1,2 +1,4 @@
-# all-round-calculator-website
-A website for my npm package: all-round-calculator
+# Moody-website
+A website for my Chrome extension: Moody
+
+Link to the extension [source code](https://github.com/Susmita-Dey/Moody).
