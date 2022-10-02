@@ -5,32 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Moody - Where people become happy</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 </head>
 
 <body>
-    <header class="text-white bg-gray-900 body-font">
-        <div class="container mx-auto flex flex-wrap px-10 py-5 flex-col md:flex-row items-center">
-            <a class="flex title-font font-medium items-center text-white mb-4 md:mb-0">
-                <img class="w-16 h-16 rounded-xl" src="assets/logo.png" alt="logo">
-                <span class="ml-3 text-xl">Moody</span>
-            </a>
-            <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                <a class="mr-5 hover:text-white" href="/">Home</a>
-                <!-- <a class="mr-5 hover:text-white" href="#about">About Us</a> -->
-                <a class="mr-5 hover:text-white" href="#services">Services</a>
-                <a class="mr-5 hover:text-white" href="#contact">Contact Us</a>
-            </nav>
-            <button
-                class="inline-flex items-center bg-purple-800 border-5 py-4 px-4 focus:outline-none hover:bg-purple-700 rounded text-base mt-4 md:mt-0">ADD TO BROWSER <span>- It's free</span>
-                <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                    class="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                    <path d="M5 12h14M12 5l7 7-7 7"></path>
-                </svg>
-            </button>
-        </div>
-    </header>
-
+  <nav class="nav" id="nav">
+    <div>
+      <a class="navbar-brand" href="#!"> <img src="assets/logo.png" alt="Logo" class="logo" /></a>
+    </div>
+    <div class="nav-links" id="navLinks">
+      <ul class="links" id="navmenu">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#services">SERVICES </a></li>
+        <li><a href="#contact">CONTACT US </a></li>
+      </ul>
+    </div>
+    <button class="login-button"><a href="#">Add to Browser- It's free →</a></button>
+    <div class="hamburger" id="ham">
+      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+        </path>
+      </svg>
+    </div>
+  </nav>
+  <div class="menu" id="menu">
+    <ul class="menu-link">
+      <li><a href="#">HOME</a></li>
+      <li><a onclick="closeMenu()" href="#services">SERVICES </a></li>
+      <li><a onclick="closeMenu()" href="#contact">CONTACT US </a></li>
+    </ul>
+  </div>
+</header>
     <!-- Hero Section -->
     <section class="bg-gradient-to-r from-cyan-500 to-blue-500 body-font">
         <div class="container mx-auto flex px-28 py-20 md:flex-row flex-col items-center">
@@ -43,7 +51,7 @@
             </div>
           </div>
           <div class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-            <img class="object-cover object-center rounded" alt="hero" src="assets/heroimg.png">
+            <img class="object-cover object-center rounded" alt="hero" src="assets/heroimg.png" style="margin-top: 20%;">
           </div>
         </div>
       </section>
@@ -233,6 +241,7 @@
           </span>
         </div>
       </footer>
+  <script src="script.js"></script>
 </body>
 
 </html>
