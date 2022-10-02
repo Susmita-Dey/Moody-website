@@ -3,6 +3,9 @@ A website for my Chrome extension: Moody
 
 Link to the extension [source code](https://github.com/Susmita-Dey/Moody).
 
+## Our Logo
+<img src="assets/logo.png" width=150px height=150px alt="logo">
+
 ---
 
 ## Contributing 👨‍💻 
