@@ -70,6 +70,9 @@
     cursor: pointer;
     background-color: #6b21a8;
     border-radius: 4px;
+    transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
   }
   
   .login-button a {
@@ -231,6 +234,9 @@ background-color: #7321bc;
   background-color: #6366F1; 
   color: #ffffff; 
   border-radius: 0.25rem; 
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
  }
  .btn1:hover{
 background-color: #4F46E5; 
@@ -247,6 +253,9 @@ background-color: #1F2937;
 color: #9CA3AF; 
 border-radius: 0.25rem; 
 border-width: 0; 
+transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 300ms;
  }
  .btn2:hover{
   background-color: #374151; 
