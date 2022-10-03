@@ -6,6 +6,15 @@
     <title>Moody - Where people become happy</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="favicon_io/site.webmanifest">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 </head>
 
@@ -21,6 +30,7 @@
     <div class="nav-links" id="navLinks">
       <ul class="links" id="navmenu">
         <li><a href="#">HOME</a></li>
+        <li><a href="#Testimonials">TESTIMONIALS</a></li>
         <li><a href="#services">SERVICES </a></li>
         <li><a href="#contact">CONTACT US </a></li>
       </ul>
@@ -38,6 +48,7 @@
   <div class="menu" id="menu">
     <ul class="menu-link">
       <li><a href="#">HOME</a></li>
+      <li><a onclick="closeMenu()" href="#Testimonials">TESTIMONIALS</a></li>
       <li><a onclick="closeMenu()" href="#services">SERVICES </a></li>
       <li><a onclick="closeMenu()" href="#contact">CONTACT US </a></li>
     </ul>
@@ -49,8 +60,10 @@
       <h1 >MOODY</h1>
       <h3>The only extension that will enlighten and help you focus in your work.</h3>
     </div>
-    <button class="btn1">Add to Edge </button>
-    <button class="btn2">Add to Chrome</button>
+    <button class="btn1">Add to Edge <i class="fa fa-edge" aria-hidden="true"></i>
+    </button>
+    <button class="btn2">Add to Chrome <i class="fa fa-chrome" aria-hidden="true" style="margin-top:3px; margin-left:6px ;"></i>
+    </button>
   </div>
 </header>
 
@@ -117,7 +130,7 @@
       </section> -->
 
       <!-- Testimonials -->
-      <section class="text-gray-400 bg-gray-900 body-font">
+      <section class="text-gray-400 bg-gray-900 body-font" id="Testimonials">
         <div class="container px-5 py-24 mx-auto">
           <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
           <div class="flex flex-wrap -m-4">
@@ -126,7 +139,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
-                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <p class="leading-relaxed mb-6">Moody has helped me immensely in eliminating distractions,prioritizing my tasks and improving my work productivity. It has helped me realize that minimizing distractions is the best way to stay in the zone and get the work done.</p>
                 <a class="inline-flex items-center">
                   <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                   <span class="flex-grow flex flex-col pl-4">
@@ -141,7 +154,7 @@
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
-                <p class="leading-relaxed mb-6">Synth chartreuse iPhone lomo cray raw denim brunch everyday carry neutra before they sold out fixie 90's microdosing. Tacos pinterest fanny pack venmo, post-ironic heirloom try-hard pabst authentic iceland.</p>
+                <p class="leading-relaxed mb-6">The features provided here at Moody have not only helped me staying on task, but has also reduced my tension and pressure that gets built up over a period of time at work. Moody has helped me direct my energy in the right direction and I would strongly recommend this to anyone who wants to improve their productivity.</p>
                 <a class="inline-flex items-center">
                   <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
                   <span class="flex-grow flex flex-col pl-4">
@@ -205,42 +218,42 @@
       </section>
 
       <!-- footer -->
-      <footer class="text-gray-400 bg-gray-900 body-font">
-        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
-          <a class="flex title-font font-medium items-center md:justify-start justify-center text-white">
-            <img class="w-16 h-16 rounded-xl" src="assets/logo.png" alt="logo">
-            <span class="ml-3 text-xl">Moody</span>
-          </a>
-          <p class="text-sm text-gray-400 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-800 sm:py-2 sm:mt-0 mt-4">© 2022 Moody —
-            <a href="https://twitter.com/its_SusmitaDey" class="text-gray-500 ml-1" target="_blank" rel="noopener noreferrer">@its_SusmitaDey</a>
+      <footer>
+        <div class="foot">
+          <img src="/assets/logo.png" alt="logo" class="footlogo" />
+          <div class="icons">
+            <ul>
+              <li>
+                <a title="linkedin" target="_blank" href=" https://www.linkedin.com/in/moody-extension-8a3529252/"
+                  class="ml-3 text-gray-400">
+                  <i class="fab fa-linkedin-in icon"></i>
+                </a>
+              </li>
+              <li>
+                <a title="github" target="_blank" href=" https://github.com/Susmita-Dey/Moody-website" class="ml-3 text-gray-400">
+                  <i class="fab fa-github icon"></i>
+                </a>
+              </li>
+              <li>
+                <a title="twitter" target="_blank" href="https://twitter.com/ExtensionMoody" class="ml-3 text-gray-400">
+                  <i class="fab fa-twitter icon"></i>
+                </a>
+              </li>
+              <li>
+                <a title="extension" target="_blank" href="https://github.com/Susmita-Dey/Moody" class="ml-3 text-gray-400">
+                  <i class="fa fa-puzzle-piece icon"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <p>© 2022 Moody —
+            <a href="mailto:moodyextension@gmail.com" class="text-gray-500 ml-1" id="email" target="_blank"
+              rel="noopener noreferrer">moodyextension@gmail.com</a>
           </p>
-          <span class="inline-flex sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start">
-            <a class="text-gray-400">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-400">
-              <svg fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <path d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-400">
-              <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-5 h-5" viewBox="0 0 24 24">
-                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-              </svg>
-            </a>
-            <a class="ml-3 text-gray-400">
-              <svg fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" class="w-5 h-5" viewBox="0 0 24 24">
-                <path stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"></path>
-                <circle cx="4" cy="4" r="2" stroke="none"></circle>
-              </svg>
-            </a>
-          </span>
         </div>
       </footer>
-
   <script src="script.js"></script>
 </body>
 
