@@ -41,10 +41,8 @@ Moody is licensed under the MIT License - see the [LICENSE](LICENSE) file for de
 - It is for only 1 month.
 
 # 📚 Contribution rules
-- Do NOT remove other content.
-- Add your name to the <b>CONTRIBUTORS.md</b> file
-- Add me as reviewer
-- Try to keep pull requests small to minimize merge conflicts.</li>
+- Do NOT modify/remove others content.
+- Try to pull requests and check that there's no merge conflicts. </li>
 
 # 🤩🤗 Getting Started
     
@@ -83,14 +81,14 @@ git push origin my-new-branch
 # ❓ FAQs (Frequently Asked Questions)
 
 - Who all can contribute?
-  - Anyone with a github account and who is signed up for
-[hacktoberfest](https://hacktoberfest.digitalocean.com/) 2022 :)
+  - Anyone with a github account can contribute
+  - If you are contributing under Hacktober Fest then you need to [sign up](https://hacktoberfest.com/) first.
 
 - How many pull request (PR) must be made, if I want to get an awesome tshirt from Hacktoberfest 2022?
   - 4
   
 - How do I track my progress to get an awesome shirt from Hacktoberfest 2022?
-  - [go to :](https://hacktoberfest.digitalocean.com/profile/). (Check Out Your Own Stats at Right Top)
+  - [Goto:](https://hacktoberfest.digitalocean.com/profile/) (Check Out Your Own Stats at Right Top)
   
 - What is the duration of Hacktoberfest 2022?
   - It is from 1st october to 31st october 2022
