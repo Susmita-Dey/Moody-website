@@ -270,7 +270,7 @@ color: #ffffff;
 
 .icons ul {
   display: flex;
-  margin: 0;
+  margin: 0.7rem 0;
   padding: 0;
 }
 
@@ -301,7 +301,7 @@ color: #ffffff;
   z-index: 3;
 }
 footer p {
-  margin-top: 15px;
+  margin-top: 4px;
 }
 footer #email:hover{
   color: #7321bc;
@@ -312,4 +312,7 @@ footer #email:hover{
 }
 .icons ul li a .icon:hover{
   color: #fff;
+}
+.footlogo{
+  width: 80px;
 }
