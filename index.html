@@ -1,19 +1,16 @@
 <!DOCTYPE html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moody - Where people become happy</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moody - Where people become happy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
-
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
-    <link rel="manifest" href="favicon_io/site.webmanifest">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
+  <link rel="shortcut icon" href="favicon_io/favicon.svg" type="image/x-icon">
+  <link rel="manifest" href="favicon_io/site.webmanifest">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 </head>
@@ -23,52 +20,57 @@
   <header>
 
 
-  <nav class="nav" id="nav">
-    <div>
-      <a class="navbar-brand" href="#!"> <img src="assets/logo.png" alt="Logo" class="logo" /></a>
-    </div>
-    <div class="nav-links" id="navLinks">
-      <ul class="links" id="navmenu">
+    <nav class="nav" id="nav">
+      <div>
+        <a class="navbar-brand" href="#!"> <img src="assets/logo-2.svg" alt="Logo" class="logo" /></a>
+      </div>
+      <div class="nav-links" id="navLinks">
+        <ul class="links" id="navmenu">
+          <li><a href="#">HOME</a></li>
+          <li><a href="#Testimonials">TESTIMONIALS</a></li>
+          <li><a href="#services">SERVICES </a></li>
+          <li><a href="#contact">CONTACT US </a></li>
+        </ul>
+      </div>
+      <button class="login-button">
+        <a href="#">Add to Browser- It's free
+          <img src="assets/right arrow.svg">
+        </a>
+      </button>
+      <div class="hamburger" id="ham">
+        <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+          </path>
+        </svg>
+      </div>
+    </nav>
+    <div class="menu" id="menu">
+      <ul class="menu-link">
         <li><a href="#">HOME</a></li>
-        <li><a href="#Testimonials">TESTIMONIALS</a></li>
-        <li><a href="#services">SERVICES </a></li>
-        <li><a href="#contact">CONTACT US </a></li>
+        <li><a onclick="closeMenu()" href="#Testimonials">TESTIMONIALS</a></li>
+        <li><a onclick="closeMenu()" href="#services">SERVICES </a></li>
+        <li><a onclick="closeMenu()" href="#contact">CONTACT US </a></li>
       </ul>
     </div>
-    <button class="login-button"><a href="#">Add to Browser- It's free →</a></button>
-    <div class="hamburger" id="ham">
-      <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
-        xmlns="http://www.w3.org/2000/svg">
-        <path
-          d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
-        </path>
-      </svg>
-    </div>
-  </nav>
-  <div class="menu" id="menu">
-    <ul class="menu-link">
-      <li><a href="#">HOME</a></li>
-      <li><a onclick="closeMenu()" href="#Testimonials">TESTIMONIALS</a></li>
-      <li><a onclick="closeMenu()" href="#services">SERVICES </a></li>
-      <li><a onclick="closeMenu()" href="#contact">CONTACT US </a></li>
-    </ul>
-  </div>
 
 
     <!-- Hero Section -->
-    <div class="content"> 
-      <h1 >MOODY</h1>
+    <div class="content">
+      <h1>MOODY</h1>
       <h3>The only extension that will enlighten and help you focus in your work.</h3>
     </div>
     <button class="btn1">Add to Edge <i class="fa fa-edge" aria-hidden="true"></i>
     </button>
-    <button class="btn2">Add to Chrome <i class="fa fa-chrome" aria-hidden="true" style="margin-top:3px; margin-left:6px ;"></i>
+    <button class="btn2">Add to Chrome <i class="fa fa-chrome" aria-hidden="true"
+        style="margin-top:3px; margin-left:6px ;"></i>
     </button>
-  </div>
-</header>
+    </div>
+  </header>
 
-      <!-- Services -->
-      <!-- <section class="text-gray-600 body-font" id="services">
+  <!-- Services -->
+  <!-- <section class="text-gray-600 body-font" id="services">
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
             <img alt="feature" class="object-cover object-center h-full w-full" src="https://dummyimage.com/460x500">
@@ -129,131 +131,161 @@
         </div>
       </section> -->
 
-      <!-- Testimonials -->
-      <section class="text-gray-400 bg-gray-900 body-font" id="Testimonials">
-        <div class="container px-5 py-24 mx-auto">
-          <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
-          <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/2 w-full">
-              <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
-                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                </svg>
-                <p class="leading-relaxed mb-6">Moody has helped me immensely in eliminating distractions,prioritizing my tasks and improving my work productivity. It has helped me realize that minimizing distractions is the best way to stay in the zone and get the work done.</p>
-                <a class="inline-flex items-center">
-                  <img alt="testimonial" src="https://dummyimage.com/106x106" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                  <span class="flex-grow flex flex-col pl-4">
-                    <span class="title-font font-medium text-white">Holden Caulfield</span>
-                    <span class="text-gray-500 text-sm">UI DEVELOPER</span>
-                  </span>
-                </a>
-              </div>
-            </div>
-            <div class="p-4 md:w-1/2 w-full">
-              <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
-                  <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
-                </svg>
-                <p class="leading-relaxed mb-6">The features provided here at Moody have not only helped me staying on task, but has also reduced my tension and pressure that gets built up over a period of time at work. Moody has helped me direct my energy in the right direction and I would strongly recommend this to anyone who wants to improve their productivity.</p>
-                <a class="inline-flex items-center">
-                  <img alt="testimonial" src="https://dummyimage.com/107x107" class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
-                  <span class="flex-grow flex flex-col pl-4">
-                    <span class="title-font font-medium text-white">Alper Kamu</span>
-                    <span class="text-gray-500 text-sm">DESIGNER</span>
-                  </span>
-                </a>
-              </div>
-            </div>
+  <!-- Testimonials -->
+  <section class="text-gray-400 bg-gray-900 body-font" id="Testimonials">
+    <div class="container px-5 py-24 mx-auto">
+      <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
+      <div class="flex flex-wrap -m-4">
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
+            </svg>
+            <p class="leading-relaxed mb-6">Moody has helped me immensely in eliminating distractions,prioritizing my
+              tasks and improving my work productivity. It has helped me realize that minimizing distractions is the
+              best way to stay in the zone and get the work done.</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://dummyimage.com/106x106"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-white">Holden Caulfield</span>
+                <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+              </span>
+            </a>
           </div>
         </div>
-      </section>
+        <div class="p-4 md:w-1/2 w-full">
+          <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4"
+              viewBox="0 0 975.036 975.036">
+              <path
+                d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z">
+              </path>
+            </svg>
+            <p class="leading-relaxed mb-6">The features provided here at Moody have not only helped me staying on task,
+              but has also reduced my tension and pressure that gets built up over a period of time at work. Moody has
+              helped me direct my energy in the right direction and I would strongly recommend this to anyone who wants
+              to improve their productivity.</p>
+            <a class="inline-flex items-center">
+              <img alt="testimonial" src="https://dummyimage.com/107x107"
+                class="w-12 h-12 rounded-full flex-shrink-0 object-cover object-center">
+              <span class="flex-grow flex flex-col pl-4">
+                <span class="title-font font-medium text-white">Alper Kamu</span>
+                <span class="text-gray-500 text-sm">DESIGNER</span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <!-- Contact us -->
-      <section class="text-gray-600 body-font relative bg-[url('/assets/back_pattern.png')] w-200 h-156" id="contact">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="flex flex-col text-center w-full">
-            <div class="h-full w-half sm:mx-20 xs:mx-20 md:mx-40 py-8 md:mx-40 px-10 pb-[60px]  bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100">
+  <!-- Contact us -->
+  <section class="text-gray-600 body-font relative bg-[url('/assets/back_pattern.png')] w-200 h-156" id="contact">
+    <div class="container px-5 py-24 mx-auto">
+      <div class="flex flex-col text-center w-full">
+        <div
+          class="h-full w-half sm:mx-20 xs:mx-20 md:mx-40 py-8 md:mx-40 px-10 pb-[60px]  bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100">
 
-              <form action="https://formspree.io/f/mpznrpra" method="POST">
+          <form action="https://formspree.io/f/mpznrpra" method="POST">
             <h1 class="sm:text-2xl md:text-3xl lg:text-4xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-            <p class="lg:w-2/3 mb-[30px] sm:text-[14px] md:text-[17px] lg:text-[20px] mx-auto leading-relaxed text-base">Feel free to contact us.</p>
-          <div class="lg:w-1/2 md:w-2/3 mx-auto">
-            <div class="flex flex-wrap -m-2">
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="name" class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px] " >Name</label>
-                  <input type="text" id="name" name="name" class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="Hello World">
+            <p
+              class="lg:w-2/3 mb-[30px] sm:text-[14px] md:text-[17px] lg:text-[20px] mx-auto leading-relaxed text-base">
+              Feel free to contact us.</p>
+            <div class="lg:w-1/2 md:w-2/3 mx-auto">
+              <div class="flex flex-wrap -m-2">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="name"
+                      class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px] ">Name</label>
+                    <input type="text" id="name" name="name"
+                      class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      placeholder="Hello World">
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-1/2">
-                <div class="relative">
-                  <label for="email" class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px]">Email</label>
-                  <input type="email" id="email" name="email" class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out" placeholder="abc@email.com">
+                <div class="p-2 w-1/2">
+                  <div class="relative">
+                    <label for="email"
+                      class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px]">Email</label>
+                    <input type="email" id="email" name="email"
+                      class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                      placeholder="abc@email.com">
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-full">
-                <div class="relative">
-                  <label for="message" class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px] ">Message</label>
-                  <textarea id="message" name="message" class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out" placeholder="I want to donate something for this beautiful extension."></textarea>
+                <div class="p-2 w-full">
+                  <div class="relative">
+                    <label for="message"
+                      class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px] ">Message</label>
+                    <textarea id="message" name="message"
+                      class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                      placeholder="I want to donate something for this beautiful extension."></textarea>
+                  </div>
                 </div>
-              </div>
-              <div class="p-2 w-full">
-                <a  href="moodyextension@gmail.com"><button type="submit" class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button></a>
-              </div>
-              <div class="w-[2000px] h-36 bg-blue-50 rounded-lg border">
-                
-              
-              <div class="p-2 w-full pt-1 mt-[5px] border-t border-gray-200 text-center">
-                <a class="text-indigo-500" href="mailto:moodyextension@gmail.com">moodyextension@gmail.com</a>
-                <p class="mb-2 text-indigo-500">---</p>
-                <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="susmitadey" data-color="#5F7FFF" data-emoji=""  data-font="Bree" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00" ></script>
-              </div>
-            </div>
-            </div>
-          </div>
-          </div>
-        </div>
-        </div>
-      </form>
-      </section>
+                <div class="p-2 w-full">
+                  <a href="moodyextension@gmail.com"><button type="submit"
+                      class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button></a>
+                </div>
+                <div class="w-[2000px] h-36 bg-blue-50 rounded-lg border">
 
-      <!-- footer -->
-      <footer>
-        <div class="foot">
-          <img src="/assets/logo.png" alt="logo" class="footlogo" />
-          <div class="icons">
-            <ul>
-              <li>
-                <a title="linkedin" target="_blank" href=" https://www.linkedin.com/in/moody-extension-8a3529252/"
-                  class="ml-3 text-gray-400">
-                  <i class="fab fa-linkedin-in icon"></i>
-                </a>
-              </li>
-              <li>
-                <a title="github" target="_blank" href=" https://github.com/Susmita-Dey/Moody-website" class="ml-3 text-gray-400">
-                  <i class="fab fa-github icon"></i>
-                </a>
-              </li>
-              <li>
-                <a title="twitter" target="_blank" href="https://twitter.com/ExtensionMoody" class="ml-3 text-gray-400">
-                  <i class="fab fa-twitter icon"></i>
-                </a>
-              </li>
-              <li>
-                <a title="extension" target="_blank" href="https://github.com/Susmita-Dey/Moody" class="ml-3 text-gray-400">
-                  <i class="fa fa-puzzle-piece icon"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
+
+                  <div class="p-2 w-full pt-1 mt-[5px] border-t border-gray-200 text-center">
+                    <a class="text-indigo-500" href="mailto:moodyextension@gmail.com">moodyextension@gmail.com</a>
+                    <p class="mb-2 text-indigo-500">---</p>
+                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                      data-name="bmc-button" data-slug="susmitadey" data-color="#5F7FFF" data-emoji="" data-font="Bree"
+                      data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff"
+                      data-coffee-color="#FFDD00"></script>
+                  </div>
+                </div>
+              </div>
+            </div>
         </div>
-        <div>
-          <p>© 2022 Moody —
-            <a href="mailto:moodyextension@gmail.com" class="text-gray-500 ml-1" id="email" target="_blank"
-              rel="noopener noreferrer">moodyextension@gmail.com</a>
-          </p>
-        </div>
-      </footer>
+      </div>
+    </div>
+    </form>
+  </section>
+
+  <!-- footer -->
+  <footer>
+    <div class="foot">
+      <img src="/assets/logo-2.svg" alt="logo" class="footlogo" />
+      <div class="icons">
+        <ul>
+          <li>
+            <a title="linkedin" target="_blank" href=" https://www.linkedin.com/in/moody-extension-8a3529252/"
+              class="ml-3 text-gray-400">
+              <i class="fab fa-linkedin-in icon"></i>
+            </a>
+          </li>
+          <li>
+            <a title="github" target="_blank" href=" https://github.com/Susmita-Dey/Moody-website"
+              class="ml-3 text-gray-400">
+              <i class="fab fa-github icon"></i>
+            </a>
+          </li>
+          <li>
+            <a title="twitter" target="_blank" href="https://twitter.com/ExtensionMoody" class="ml-3 text-gray-400">
+              <i class="fab fa-twitter icon"></i>
+            </a>
+          </li>
+          <li>
+            <a title="extension" target="_blank" href="https://github.com/Susmita-Dey/Moody" class="ml-3 text-gray-400">
+              <i class="fa fa-puzzle-piece icon"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <p>© 2022 Moody —
+        <a href="mailto:moodyextension@gmail.com" class="text-gray-500 ml-1" id="email" target="_blank"
+          rel="noopener noreferrer">moodyextension@gmail.com</a>
+      </p>
+    </div>
+  </footer>
   <script src="script.js"></script>
 </body>
 

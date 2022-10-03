@@ -8,11 +8,12 @@
 
 html{
   scroll-behavior: smooth;
+  font-size: 100%;
 }
 
 .nav {
     display: flex;
-    padding: 0.5% 4%;
+    padding: 1rem 2rem;
     justify-content: space-between;
     align-items: center;
     position: fixed;
@@ -23,7 +24,7 @@ html{
     transition: 0.3s ease-in-out;
   }  
   .logo {
-    width: 100px;
+    width: 10rem;
   }
   
   .hamburger {
@@ -37,6 +38,9 @@ html{
     color: white;
   }
   
+  .hamburger svg{
+    width: 2rem;
+  }
   
   .hamburger:hover {
     color: rgb(200, 200, 200)
@@ -52,7 +56,9 @@ html{
   .links a {
     color: white;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 400;
   }
   
   .links li::after {
@@ -74,23 +80,29 @@ html{
     cursor: pointer;
     background-color: #6b21a8;
     border-radius: 4px;
+    padding: 0.5rem 1.5rem;
+    overflow: hidden;
   }
   
   .login-button a {
     display: block;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
-    margin: 0.1rem 0.3rem;
-    color: #fff;
-    height: 3.2rem;
-    width: 14rem;
+    font-size: 0.9rem;
+    font-weight: 600;
     letter-spacing: 1px;
+    color: #fff;
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 0.5rem;
   }
+
+.login-button img{
+  transition: all 0.5s ease-in-out;
+  width: 0.6rem;
+}
   
   .login-button a:hover {
     color: #ffffff;
@@ -98,6 +110,10 @@ html{
   
   .login-button:hover {
 background-color: #7321bc;
+  }
+
+  .login-button:hover img{
+    translate: 50px 0;
   }
   
   .menu {
@@ -122,24 +138,36 @@ background-color: #7321bc;
     animation: slideIn 0.5s ease-in-out;
     z-index: 100;
   }
-  @media screen and (max-width: 650px) {
+  @media screen and (max-width: 1025px) {
     .nav-links {
       display: none;
     }
    
     .logo {
-      width: 80px;
+      width: 10rem;
     }
     .hamburger {
       display: flex;
     } 
-    .login-button a{
-      height: 2.9rem;
-      width: 14rem;
+
+    .login-button{
+      position: absolute;
+      top: 5rem;
+      right: 2rem;
+    }
+  }
+
+  @media screen and (max-width:650px) {
+    .nav{
+      padding: 1rem;
+    }
+
+    .login-button{
+      right: 1rem;
     }
   }
   
-  @media screen and (min-width: 650px) {
+  @media screen and (min-width: 1025px) {
     .open{
       display: none;
     } 
@@ -186,13 +214,13 @@ background-color: #7321bc;
 
   header{
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+  background-image: linear-gradient(rgba(4, 9, 30, 0.5), rgba(4, 9, 30, 0.5)),
     url("./assets/home.jpg");
   background-position: center;
     background-size: cover;
   position: relative;
   min-height: 110vh;
-  margin-top: 5%;
+  margin-top: 0;
   height: 110vh;
   display: flex;
   align-items: center;
@@ -318,5 +346,6 @@ footer #email:hover{
   color: #fff;
 }
 .footlogo{
-  width: 80px;
+  width: 10rem;
+  margin-block: 2rem;
 }
