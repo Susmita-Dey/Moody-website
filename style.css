@@ -24,6 +24,8 @@ html{
   }  
   .logo {
     width: 100px;
+    border-radius: 20px;
+    border: 2px solid #6366F1;
   }
   
   .hamburger {
@@ -53,6 +55,7 @@ html{
     color: white;
     text-decoration: none;
     font-size: 20px;
+    letter-spacing: 1px;
   }
   
   .links li::after {
@@ -72,7 +75,6 @@ html{
   .login-button {
     border: none;
     cursor: pointer;
-    background-color: #6b21a8;
     border-radius: 4px;
   }
   
@@ -85,18 +87,23 @@ html{
     color: #fff;
     height: 3.2rem;
     width: 14rem;
-    letter-spacing: 1px;
+    /* letter-spacing: 1px; */
     text-align: center;
     display: flex;
     justify-content: center;
     align-items: center;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: #6b21a8;
+    box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
+
   }
   
   .login-button a:hover {
     color: #ffffff;
   }
   
-  .login-button:hover {
+  .login-button a:hover {
 background-color: #7321bc;
   }
   
@@ -257,3 +264,14 @@ border-width: 0;
 color: #ffffff; 
  }
 
+ /* custom scroll bar */
+::-webkit-scrollbar{
+   width: 11px;
+}
+::-webkit-scrollbar-track{
+	background: #1F2937;
+}
+::-webkit-scrollbar-thumb{
+	background: #6b21a8;
+	border-radius: 100px;
+}
