@@ -320,3 +320,15 @@ footer #email:hover{
 .footlogo{
   width: 80px;
 }
+.container-glass {
+  background: rgba(0,0,0,0.8);
+  background-color: rgba(0,0,0,0.2);
+  padding: 20px;
+}
+
+@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+  .container-glass {
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
+  }
+}
