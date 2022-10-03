@@ -256,4 +256,49 @@ border-width: 0;
   background-color: #374151; 
 color: #ffffff; 
  }
+ #about {
+  background-color: white;
+  width: 100%;
+  padding: 5px 0px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+#about h1 {
+  color: #000;
+  font-size: 50px;
+  margin: 20px 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.about .max-width {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .about-content{
+    order: 3;
+  }
+
+  .about .photo{
+    margin-bottom: 2rem;
+  }
+}
+
+.about-content p{
+  max-width: 700px;
+  padding: 0 1.5em;
+  font-size: 27px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.text-2{
+  margin-top: 2rem;
+}
 
