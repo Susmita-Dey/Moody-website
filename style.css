@@ -367,3 +367,27 @@ footer #email:hover{
 .footlogo{
   width: 80px;
 }
+@media screen and (max-width: 366px) {
+  .btn1{
+    margin-top: 22rem;
+    padding-right: 0.5rem;
+  }
+  .btn2{
+    margin-top: 22rem;
+    padding-right: 0.5rem;
+  }
+  .login-button a {
+    font-weight: 400;
+    margin: 0rem -2.7rem;
+    height: 2.2rem;
+    width: 14rem;
+    letter-spacing: 0px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 426px){
+  .logo {
+    width: 70px;
+  }
+
+}

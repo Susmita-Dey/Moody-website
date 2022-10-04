@@ -101,6 +101,7 @@ git push origin my-new-branch
 <table>
   <tr>
 <td align="center"><a href="https://github.com/Susmita-Dey"><img src="https://avatars.githubusercontent.com/u/79099734?v=4" width="100px;" alt=""/><br /><sub><b>Susmita Dey</b></sub></a></td>
+<td align="center"><a href="https://github.com/imaaquibali"><img src="https://avatars.githubusercontent.com/u/84700316?v=4" width="100px;" alt=""/><br /><sub><b>Aaquib Ali</b></sub></a></td>
   </tr>
 </table>
 
