@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 .nav {
     display: flex;
     padding: 0.5% 4%;
@@ -261,4 +265,91 @@ transition-property: color, background-color, border-color, text-decoration-colo
   background-color: #374151; 
 color: #ffffff; 
  }
+ footer {
+  position: relative;
+  width: 100%;
+  background-color: #111827;
+  color: white;
+  padding: 15px 0px;
+  text-align: center;
+}
+.foot{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0.2rem 0;
+  gap: 0.3rem;
+}
 
+.icons ul {
+  display: flex;
+  margin: 0.7rem 0;
+  padding: 0;
+}
+
+.icons ul li {
+  list-style: none;
+}
+
+.icons ul li a {
+  display: block;
+  position: relative;
+  width: 34px;
+  height: 34px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 20px;
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  padding-top: 3px;
+  border-radius: 50%;
+  z-index: 1;
+  border: 2px solid #fff;
+}
+
+.icons ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+footer p {
+  margin-top: 4px;
+}
+footer #email:hover{
+  color: #7321bc;
+}
+.icons ul li a:hover{
+  background-color: #7321bc;
+  border: 2px solid #7321bc;
+}
+.icons ul li a .icon:hover{
+  color: #fff;
+}
+.footlogo{
+  width: 80px;
+}
+@media screen and (max-width: 366px) {
+  .btn1{
+    margin-top: 22rem;
+    padding-right: 0.5rem;
+  }
+  .btn2{
+    margin-top: 22rem;
+    padding-right: 0.5rem;
+  }
+  .login-button a {
+    font-weight: 400;
+    margin: 0rem -2.7rem;
+    height: 2.2rem;
+    width: 14rem;
+    letter-spacing: 0px;
+    font-size: 11px;
+  }
+}
+@media screen and (max-width: 426px){
+  .logo {
+    width: 70px;
+  }
+
+}
