@@ -564,7 +564,7 @@ background-size:100%;
 }
 .copyright-text
 {
-  margin:0
+  margin:20px;
 }
 @media (max-width:991px)
 {
