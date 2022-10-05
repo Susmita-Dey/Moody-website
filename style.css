@@ -249,38 +249,91 @@ header {
   padding-bottom: 0.5rem;
   margin-top: 12rem;
   padding-left: 1.5rem;
+
+  padding-right: 1.5rem; 
+  background-color: #6366F1; 
+  color: #ffffff; 
+  border-radius: 0.25rem; 
+ }
+ .btn1:hover{
+background-color: #4F46E5; 
+ }
+ .btn2{
+  display: inline-flex; 
+padding-top: 0.5rem;
+margin-top: 12rem;
+margin-left: 2rem;
+padding-bottom: 0.5rem; 
+padding-left: 1.5rem;
+padding-right: 1.5rem; 
+background-color: #1F2937; 
+color: #9CA3AF; 
+border-radius: 0.25rem; 
+border-width: 0; 
+ }
+ .btn2:hover{
+  background-color: #374151; 
+color: #ffffff; 
+ }
+ #about {
+  background-color: white;
+  width: 100%;
+  padding: 5px 0px;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+#about h1 {
+  color: #000;
+  font-size: 50px;
+  margin: 20px 20px;
+  font-weight: 800;
+  text-align: center;
+}
+
+.about .max-width {
+  color: #000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 1050px) {
+  .about-content{
+    order: 3;
+  }
+
+  .about .photo{
+    margin-bottom: 2rem;
+  }
+}
+
+.about-content p{
+  max-width: 700px;
+  padding: 0 1.5em;
+  font-size: 27px;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+.text-2{
+  margin-top: 2rem;
+}
+
+ footer {
+
   padding-right: 1.5rem;
   background-color: #6366F1;
   color: #ffffff;
   border-radius: 0.25rem;
 }
 
-.btn1:hover {
-  background-color: #4F46E5;
-}
 
-.btn2 {
-  display: inline-flex;
-  padding-top: 0.5rem;
-  margin-top: 12rem;
-  margin-left: 2rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  background-color: #1F2937;
-  color: #9CA3AF;
-  border-radius: 0.25rem;
-  border-width: 0;
-}
-
-.btn2:hover {
-  background-color: #374151;
-  color: #ffffff;
-}
 
 /* TESTIMONIALS AND CONTACT */
 
-section {
+#Testimonials {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -321,6 +374,7 @@ footer {
   align-items: center;
   margin: 0.2rem 0;
   gap: 0.3rem;
+
 }
 
 .icons ul {
