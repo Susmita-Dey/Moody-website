@@ -323,7 +323,7 @@ color: #ffffff;
 
 /* TESTIMONIALS AND CONTACT */
 
-section {
+#Testimonials {
   display: flex;
   justify-content: center;
   align-items: center;
