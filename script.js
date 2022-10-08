@@ -1,10 +1,15 @@
 const ham = document.getElementById("ham");
 const menu = document.getElementById("menu");
 const close = document.querySelectorAll('.close');
+const form = document.getElementById('formSubmit');
+var formSuccess = document.getElementById("form-success");
+var formError = document.getElementById("form-errors");
+var email = document.getElementById('userEmail');
+
 const closeMenu = () => {
   if (menu.classList.contains("open")) {
     menu.classList.remove("open");
-    
+
     console.log("open");
   }
   ham.innerHTML = '<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path></svg>'
@@ -26,3 +31,51 @@ close.forEach(ele => {
   ele.addEventListener("click", closeMenu);
 }
 )
+
+async function submitForm(e) {
+  e.preventDefault();
+  const myFormData = new FormData(e.target);
+  var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+  if (!filter.test(email.value)) {
+    email.focus();
+    alert('Please provide a valid email address');
+    return;
+  }
+
+  try {
+    await fetch('https://formspree.io/f/mpznrpra', {
+      method: form.method,
+      body: myFormData,
+      headers: {
+        'Accept': 'application/json'
+      }
+    }).then(response => {
+      if (response.ok) {
+        formSuccess.style.display = 'block';
+        form.reset()
+      } else {
+        response.json().then(data => {
+          if (Object.hasOwn(data, 'errors')) {
+            formError.style.display = 'block';
+            formError.innerHTML = data["errors"].map(error => error["message"]).join(", ")
+            alert(data["errors"].map(error => error["message"]).join(", "));
+          } else {
+            formError.style.display = 'block';
+            formError.innerHTML = "Oops! There was a problem submitting your form"
+          }
+        })
+      }
+    })
+  } catch (error) {
+    formError.style.display = 'block';
+    formError.innerHTML = "Oops! There was a problem submitting your form. Try checking internet connection."
+  }
+  setTimeout(() => {
+    formSuccess.style.display = 'none';
+    formError.style.display = 'none';
+    return;
+  }, 4000);
+}
+
+form.addEventListener("submit", submitForm);
