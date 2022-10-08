@@ -276,7 +276,7 @@ border-width: 0;
 color: #ffffff; 
  }
  #about {
-  background-color: white;
+  background-color: rgb(87 73 92);
   width: 100%;
   padding: 5px 0px;
   padding-top: 30px;
@@ -284,15 +284,15 @@ color: #ffffff;
 }
 
 #about h1 {
-  color: #000;
+  color: rgb(208, 203, 203);
   font-size: 50px;
   margin: 20px 20px;
-  font-weight: 800;
+  font-weight: 400;
   text-align: center;
 }
 
 .about .max-width {
-  color: #000;
+  color: rgb(201, 193, 193);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -312,7 +312,8 @@ color: #ffffff;
 .about-content p{
   max-width: 700px;
   padding: 0 1.5em;
-  font-size: 27px;
+  font-size: 20px;
+  font-weight: 400;
   margin-left: 1em;
   margin-right: 1em;
 }
