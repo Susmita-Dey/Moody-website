@@ -566,6 +566,9 @@ background-size:100%;
 {
   margin:20px;
 }
+.bold:hover{
+color: #5e2ced;
+}
 @media (max-width:991px)
 {
   .site-footer [class^=col-]
