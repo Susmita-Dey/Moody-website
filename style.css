@@ -248,35 +248,33 @@ header {
   margin-top: 12rem;
   padding-left: 1.5rem;
 
-  padding-right: 1.5rem;
-  background-color: #6366f1;
-  color: #ffffff;
-  border-radius: 0.25rem;
-}
-.btn1:hover {
-  background-color: #4f46e5;
-  transition: all 0.3s ease-in;
-}
-.btn2 {
-  display: inline-flex;
-  padding-top: 0.5rem;
-  margin-top: 12rem;
-  margin-left: 2rem;
-  padding-bottom: 0.5rem;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  background-color: #1f2937;
-  color: #fff;
-  border-radius: 0.25rem;
-  border-width: 0;
-  transition: all 0.3s ease-in;
-}
-.btn2:hover {
-  background-color: #374151;
-  color: #ffffff;
-}
-#about {
-  background-color: white;
+  padding-right: 1.5rem; 
+  background-color: #6366F1; 
+  color: #ffffff; 
+  border-radius: 0.25rem; 
+ }
+ .btn1:hover{
+background-color: #4F46E5; 
+ }
+ .btn2{
+  display: inline-flex; 
+padding-top: 0.5rem;
+margin-top: 12rem;
+margin-left: 2rem;
+padding-bottom: 0.5rem; 
+padding-left: 1.5rem;
+padding-right: 1.5rem; 
+background-color: #1F2937; 
+color: #9CA3AF; 
+border-radius: 0.25rem; 
+border-width: 0; 
+ }
+ .btn2:hover{
+  background-color: #374151; 
+color: #ffffff; 
+ }
+ #about {
+  background-color: rgb(87 73 92);
   width: 100%;
   padding: 5px 0px;
   padding-top: 30px;
@@ -284,15 +282,15 @@ header {
 }
 
 #about h1 {
-  color: #000;
+  color: rgb(208, 203, 203);
   font-size: 50px;
   margin: 20px 20px;
-  font-weight: 800;
+  font-weight: 400;
   text-align: center;
 }
 
 .about .max-width {
-  color: #000;
+  color: rgb(201, 193, 193);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -312,7 +310,8 @@ header {
 .about-content p {
   max-width: 700px;
   padding: 0 1.5em;
-  font-size: 27px;
+  font-size: 20px;
+  font-weight: 400;
   margin-left: 1em;
   margin-right: 1em;
 }
