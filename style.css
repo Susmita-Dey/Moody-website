@@ -58,7 +58,7 @@ body {
 }
 
 .logo {
-  width: 65px;
+  width: 55px;
 }
 
 .hamburger {
@@ -79,13 +79,13 @@ body {
 .links li {
   list-style: none;
   display: inline-block;
-  padding: 8px 12px;
   position: relative;
 }
 
 .links a {
-  color: white;
+  color: yellow;
   text-decoration: none;
+  padding: 50px 60px;
   font-size: 17px;
 }
 
@@ -100,13 +100,16 @@ body {
 }
 
 .links li:hover::after {
-  width: 100%;
+  width: 60%;
+  color: #6b21a8;
+  background: #6b21a8;
 }
 
 .login-button {
   border: none;
   cursor: pointer;
   background-color: #6b21a8;
+  color: #6b21a8;
   border-radius: 4px;
 }
 
