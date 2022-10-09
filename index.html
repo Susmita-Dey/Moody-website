@@ -7,6 +7,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="style.css">
 
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
@@ -25,13 +26,13 @@
 
     <nav class="nav" id="nav">
       <div>
-        <a class="navbar-brand" href="#!"> <img src="assets/logo.png" alt="Logo" class="logo" /></a>
+        <a class="navbar-brand" href="#"> <img src="assets/logo.png" alt="Logo" class="logo" /></a>
       </div>
       <div class="nav-links" id="navLinks">
         <ul class="links" id="navmenu">
           <li><a href="#">HOME</a></li>
+          <li><a href="#about">ABOUT</a></li>
           <li><a href="#Testimonials">TESTIMONIALS</a></li>
-          <li><a href="#services">SERVICES </a></li>
           <li><a href="#contact">CONTACT US </a></li>
         </ul>
       </div>
@@ -47,9 +48,9 @@
     </nav>
     <div class="menu" id="menu">
       <ul class="menu-link">
-        <li><a href="#">HOME</a></li>
+        <li><a onclick="closeMenu()" href="#">HOME</a></li>
+        <li><a onclick="closeMenu()" href="#about">ABOUT</a></li>
         <li><a onclick="closeMenu()" href="#Testimonials">TESTIMONIALS</a></li>
-        <li><a onclick="closeMenu()" href="#services">SERVICES </a></li>
         <li><a onclick="closeMenu()" href="#contact">CONTACT US </a></li>
       </ul>
     </div>
@@ -68,19 +69,21 @@
     </div>
   </header>
 
-    <!-- About Section -->
-    <section id="about" class="about">
-      <h1 data-aos="flip-right">About Us</h1>
-      <div class="max-width">
-        <div data-aos="zoom-in" class="photo"><img src="./assets/about.jpg" alt="" height="400px" width="430px"></div>
-        <div class="about-content">
-          <p data-aos="fade-left" class="text-1">Moddy is a chrome extension that will help you filter your home page of your Chrome browser according to your mood.</p>
-          <p data-aos="fade-left" class="text-2">The extension asks for your mood to help you perform better and care for your mental health.</p>
-        </div>
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h1 data-aos="fade-up">About Us</h1>
+    <div class="max-width">
+      <div data-aos="zoom-in" class="photo"><img src="./assets/mood.jpg" alt="" height="400px" width="430px"></div>
+      <div class="about-content">
+        <p data-aos="fade-left" class="text-1">Moddy is a chrome extension that will help you filter your home page of
+          your Chrome browser according to your mood.</p>
+        <p data-aos="fade-left" class="text-2">The extension asks for your mood to help you perform better and care for
+          your mental health.</p>
       </div>
-    </section>
-      <!-- Services -->
-      <!-- <section class="text-gray-600 body-font" id="services">
+    </div>
+  </section>
+  <!-- Services -->
+  <!-- <section class="text-gray-600 body-font" id="services">
 
         <div class="container px-5 py-24 mx-auto flex flex-wrap">
           <div class="lg:w-1/2 w-full mb-10 lg:mb-0 rounded-lg overflow-hidden">
@@ -147,7 +150,7 @@
         <div class="container px-5 py-24 mx-auto">
           <h1 class="text-3xl font-medium title-font text-white mb-12 text-center">Testimonials</h1>
           <div class="flex flex-wrap -m-4">
-            <div class="p-4 md:w-1/2 w-full">
+            <div class="p-4 md:w-1/2 w-full" data-aos="fade-up">
               <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
@@ -162,7 +165,7 @@
                 </a>
               </div>
             </div>
-            <div class="p-4 md:w-1/2 w-full">
+            <div class="p-4 md:w-1/2 w-full" data-aos="fade-down">
               <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
@@ -181,70 +184,131 @@
     </div>
   </section>
 
-  <!-- Contact us -->
-  <section class="text-gray-600 body-font relative bg-[url('/assets/contact-us.jpg')] h-156 w-full bg-cover" id="contact">
-    <div class="container px-5 py-24 mx-auto">
-      <div class="flex flex-col text-center w-full">
-        <div
-          class="h-full w-half sm:mx-20 xs:mx-20 md:mx-40 py-8 md:mx-40 px-10 pb-[60px]  bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100">
-
-          <form action="https://formspree.io/f/mpznrpra" method="POST">
-            <h1 class="sm:text-2xl md:text-3xl lg:text-4xl font-medium title-font mb-4 text-gray-900">Contact Us</h1>
-            <p
-              class="lg:w-2/3 mb-[30px] sm:text-[14px] md:text-[17px] lg:text-[20px] mx-auto leading-relaxed text-base">
-              Feel free to contact us.</p>
-            <div class="lg:w-1/2 md:w-2/3 mx-auto">
-              <div class="flex flex-wrap -m-2">
-                <div class="p-2 w-1/2">
-                  <div class="relative">
-                    <label for="name"
-                      class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px] ">Name</label>
-                    <input type="text" id="name" name="name"
-                      class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      placeholder="Hello World">
+    <!-- Contact us -->
+    <section class="text-gray-600 body-font relative bg-[url('/assets/contact-us.jpg')] h-156 w-full bg-cover" id="contact">
+      <div class="container px-5 py-24 mx-auto">
+        <div class="flex flex-col text-center w-full">
+          <div 
+            class="h-full w-half sm:mx-20 xs:mx-20 md:mx-40 py-8 md:mx-40 px-10 pb-[60px] bg-gray-300 rounded-md bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-30 border border-gray-100"
+            data-aos="zoom-in">
+            <form
+              id="formSubmit"
+              method="POST"
+            >
+              <h1
+                class="sm:text-2xl md:text-3xl lg:text-4xl font-medium title-font mb-4 text-gray-900"
+              >
+                Contact Us
+              </h1>
+              <p
+                class="lg:w-2/3 mb-[30px] sm:text-[14px] md:text-[17px] lg:text-[20px] mx-auto leading-relaxed text-base"
+              >
+                Feel free to contact us.
+              </p>
+              <div class="lg:w-1/2 md:w-2/3 mx-auto">
+                <div class="flex flex-wrap -m-2">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label
+                        for="name"
+                        class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px]"
+                        >Name</label
+                      >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        placeholder="Hello World"
+                        required
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="p-2 w-1/2">
-                  <div class="relative">
-                    <label for="email"
-                      class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px]">Email</label>
-                    <input type="email" id="email" name="email"
-                      class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
-                      placeholder="abc@email.com">
+                  <div class="p-2 w-1/2">
+                    <div class="relative">
+                      <label
+                        for="email"
+                        class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px]"
+                        >Email</label
+                      >
+                      <input
+                        type="email"
+                        id="userEmail"
+                        name="email"
+                        class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+                        placeholder="abc@email.com"
+                        required
+                      />
+                    </div>
                   </div>
-                </div>
-                <div class="p-2 w-full">
-                  <div class="relative">
-                    <label for="message"
-                      class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px] ">Message</label>
-                    <textarea id="message" name="message"
-                      class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
-                      placeholder="I want to donate something for this beautiful extension."></textarea>
+                  <div class="p-2 w-full">
+                    <div class="relative">
+                      <label
+                        for="message"
+                        class="leading-7 text-sm text-gray-600 sm:text-[13px] md:text-[15px] lg:text-[17px]"
+                        >Message</label
+                      >
+                      <textarea
+                        id="message"
+                        name="message"
+                        class="w-full bg-blue-50 bg-opacity-85 rounded border border-gray-300 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+                        placeholder="I want to donate something for this beautiful extension."
+                        required
+                      ></textarea>
+                    </div>
                   </div>
-                </div>
-                <div class="p-2 w-full">
-                  <a href="moodyextension@gmail.com"><button type="submit"
-                      class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg">Submit</button></a>
-                </div>
-                <div class="w-[2000px] h-36 bg-blue-50 rounded-lg border">
-
-
-                  <div class="p-2 w-full pt-1 mt-[5px] border-t border-gray-200 text-center">
-                    <a class="text-indigo-500" href="mailto:moodyextension@gmail.com">moodyextension@gmail.com</a>
-                    <p class="mb-2 text-indigo-500">---</p>
-                    <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
-                      data-name="bmc-button" data-slug="susmitadey" data-color="#5F7FFF" data-emoji="" data-font="Bree"
-                      data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#ffffff"
-                      data-coffee-color="#FFDD00"></script>
+                  <p
+                    id="form-success"
+                    class="hidden text-sm mx-auto border-solid border-2 text-green-500 border-green-600 bg-green-100 rounded py-2 w-full"
+                  >
+                    Thanks for your submission!
+                  </p>
+                  <p
+                    id="form-errors"
+                    class="hidden text-sm mx-auto border-solid border-2 text-red-500 border-red-600 bg-red-100 rounded py-2 w-full"
+                  ></p>
+                  <div class="p-2 w-full">
+                    <a href="moodyextension@gmail.com"
+                      ><button
+                        type="submit"
+                        class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                      >
+                        Submit
+                      </button></a
+                    >
+                  </div>
+                  <div class="w-[2000px] h-36 bg-blue-50 rounded-lg border">
+                    <div
+                      class="p-2 w-full pt-1 mt-[5px] border-t border-gray-200 text-center"
+                    >
+                      <a
+                        class="text-indigo-500"
+                        href="mailto:moodyextension@gmail.com"
+                        >moodyextension@gmail.com</a
+                      >
+                      <p class="mb-2 text-indigo-500">---</p>
+                      <script
+                        type="text/javascript"
+                        src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js"
+                        data-name="bmc-button"
+                        data-slug="susmitadey"
+                        data-color="#5F7FFF"
+                        data-emoji=""
+                        data-font="Bree"
+                        data-text="Buy me a coffee"
+                        data-outline-color="#000000"
+                        data-font-color="#ffffff"
+                        data-coffee-color="#FFDD00"
+                      ></script>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
+            </form>
+          </div>
         </div>
       </div>
-    </div>
-    </form>
-  </section>
+    </section>
 
   <!-- footer -->
   <!-- <footer>
@@ -286,10 +350,10 @@
   </footer> -->
   <footer class="new_footer_area bg_color">
     <div class="new_footer_top">
-        <div class="footer_bg">
-            <div class="footer_bg_one"></div>
-            <div class="footer_bg_two"></div>
-        </div>
+      <div class="footer_bg">
+        <div class="footer_bg_one"></div>
+        <div class="footer_bg_two"></div>
+      </div>
     </div>
 
     <div class="site-footer">
@@ -297,22 +361,26 @@
     <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
         <ul class="social-icons">
-          <li><a class="github" href="https://github.com/Susmita-Dey/Moody-website" target="_blank"><i class="fa fa-github"></i></a></li>
-          <li><a class="twitter" href="https://twitter.com/ExtensionMoody"target="_blank"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="linkedin" href="https://www.linkedin.com/in/moody-extension-8a3529252/"target="_blank"><i class="fa fa-linkedin"></i></a></li>   
-          <li><a class="extensiontarget" href="https://github.com/Susmita-Dey/Moody" target="_blank"><i class="fa fa-puzzle-piece"></i></a></li>
+          <li><a class="github" href="https://github.com/Susmita-Dey/Moody-website"><i class="fa fa-github"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/ExtensionMoody"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/moody-extension-8a3529252/"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="extensiontarget" href="https://github.com/Susmita-Dey/Moody"><i class="fa fa-puzzle-piece"></i></a></li>
         </ul>
       </div>
       <div class="col-md-8 col-sm-6 col-xs-12">
-        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by 
-     <a href="mailto:moodyextension@gmail.com"><b class="bold">Moody</b></a>.
+        <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
+     <a href="mailto:moodyextension@gmail.com"><b>Moody</b></a>.
         </p>
       </div>
     </div>
-  </div>
-  </div>
-</footer>
+  </footer>
   <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+    });
+  </script>
 </body>
 
 </html>
