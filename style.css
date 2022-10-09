@@ -248,6 +248,38 @@ header {
   margin-top: 12rem;
   padding-left: 1.5rem;
 
+
+  padding-right: 1.5rem;
+  background-color: #6366F1;
+  color: #ffffff;
+  border-radius: 0.25rem;
+}
+
+.btn1:hover {
+  background-color: #4F46E5;
+}
+
+.btn2 {
+  display: inline-flex;
+  padding-top: 0.5rem;
+  margin-top: 12rem;
+  margin-left: 2rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  background-color: #1F2937;
+  color: #9CA3AF;
+  border-radius: 0.25rem;
+  border-width: 0;
+}
+
+.btn2:hover {
+  background-color: #374151;
+  color: #ffffff;
+}
+
+#about {
+  background-color: white;
   padding-right: 1.5rem; 
   background-color: #6366F1; 
   color: #ffffff; 
@@ -274,6 +306,10 @@ border-width: 0;
 color: #ffffff; 
  }
  #about {
+  background-color: rgb(87 73 92);
+
+
+
   width: 100%;
   padding: 5px 0px;
   padding-top: 30px;
@@ -324,6 +360,7 @@ color: #ffffff;
 }
 
 footer {
+
   padding-right: 1.5rem;
   background-color: #6366f1;
   color: #ffffff;
@@ -355,6 +392,7 @@ footer {
     background-position: 0% 50%;
   }
 }
+
 
 /* footer section */
 
@@ -429,28 +467,77 @@ footer #email:hover {
 .footlogo {
   width: 80px;
 }
-@media screen and (max-width: 366px) {
-  .btn1{
-    margin-top: 22rem;
-    padding-right: 0.5rem;
-  }
-  .btn2{
-    margin-top: 22rem;
-    padding-right: 0.5rem;
-  }
-  .login-button a {
-    font-weight: 400;
-    margin: 0rem -2.7rem;
-    height: 2.2rem;
-    width: 14rem;
-    letter-spacing: 0px;
-    font-size: 11px;
-  }
+
+.bmc-btn-text {
+  font-size: 16px;
 }
-@media screen and (max-width: 426px){
+.bg-blue-50{
+  margin-top:15px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+@media(max-width:330px){
+  .btn1 {
+      margin-top: 20rem;
+      padding-right: 0.5rem;
+    }
+  
+    .btn2 {
+      margin-top: 22rem;
+      padding-right: 0.5rem;
+    }
+  
+    .login-button a {
+      font-weight: 400;
+      margin: 0rem -2.7rem;
+      height: 2.2rem;
+      width: 14rem;
+      letter-spacing: 0px;
+      font-size: 11px;
+    }
+     
+    .p-2.w-full.pt-1.mt-\[5px\].border-t.border-gray-200.text-center{
+      width: 178px;
+    }
+  
+    .bmc-btn-text {
+      font-size: 13px;
+   
+     
+    }
+   svg{
+    margin-right:-6px;
+   }
+  .bmc-btn-container {
+      width: 160px;
+      
+    
+  
+     }
+  
+    a.bmc-btn {
+      min-width: 142px;
+  
+  
+    } 
+  
+    .text-indigo-500 {
+      font-size: 12px;
+     
+    
+    }
+  }
+@media screen and (max-width: 426px) {
   .logo {
     width: 70px;
   }
+
+
+}
 
 } */
 body {
