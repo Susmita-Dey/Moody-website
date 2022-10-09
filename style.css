@@ -24,9 +24,9 @@ body{
   height: 85px;
   z-index: 10;
   background-color: #1118277a;
-  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.35 );
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.35);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
   border-radius: 1px;
   border: 1px solid #1118277a;
   transition: 0.3s ease-in-out;
