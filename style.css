@@ -165,7 +165,7 @@ body {
   }
 
   .logo {
-    width: 50px;
+    width: 45px;
   }
 
   .hamburger {
@@ -173,7 +173,7 @@ body {
   }
 
   .add-to-browser-button a {
-    height: 2.9rem;
+    height: 2.3rem;
     width: 14rem;
   }
 }
