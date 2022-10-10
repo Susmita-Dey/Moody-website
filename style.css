@@ -705,6 +705,9 @@ body {
   font-weight: 700;
   font-size: 13px;
 }
+.bold:hover{
+  color: #5e2ced;
+  }
 .social-icons a {
   background-color: #eceeef;
   color: #818a91;
