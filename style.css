@@ -8,6 +8,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 #load{
 	margin: auto;
     width: 100%;
@@ -18,8 +19,34 @@ html {
 }
 #main{
   overflow: hidden;
+
+/* Bottom to Top Button */
+.back-top-wrap {
+  position: fixed;
+  bottom: 5rem;
+  right: 1rem;
+  background-color: #80f7d1;
+  padding: 1rem 1.2rem;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  z-index: 100;
 }
 
+.back-top-wrap:hover {
+  background-color: #00a2ff;
+  color: #80f7d1;
+
+}
+
+.back-top-wrap:hover .fas.fa-arrow-up {
+  color: white;
+}
+
+.fas.fa-arrow-up {
+  color: #00488f;
+  transition: 0.3s ease-in-out;
+}
 body {
   margin-top: -80px;
 }
@@ -32,7 +59,7 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  height: 85px;
+  height: 65px;
   z-index: 10;
   background-color: #1118277a;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.35);
@@ -44,7 +71,7 @@ body {
 }
 
 .logo {
-  width: 65px;
+  width: 47px;
 }
 
 .hamburger {
@@ -72,14 +99,14 @@ body {
 .links a {
   color: white;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 .links li::after {
   content: "";
   width: 0%;
   height: 3px;
-  background: #6b21a8;
+  background: linear-gradient(to right, #9a51ec, #e68fc1);
   display: block;
   margin: auto;
   transition: 0.5s ease-in-out;
@@ -89,21 +116,22 @@ body {
   width: 100%;
 }
 
-.login-button {
+.add-to-browser-button {
   border: none;
   cursor: pointer;
   background-color: #6b21a8;
   border-radius: 4px;
 }
 
-.login-button a {
+.add-to-browser-button a {
   display: block;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
+  font-size: 0.9rem;
   font-weight: 400;
   margin: 0.1rem 0.3rem;
   color: #fff;
-  height: 3.2rem;
+  height: 2.3rem;
   width: 14rem;
   letter-spacing: 1px;
   text-align: center;
@@ -112,12 +140,14 @@ body {
   align-items: center;
 }
 
-.login-button a:hover {
+.add-to-browser-button a:hover {
   color: #ffffff;
 }
 
-.login-button:hover {
+.add-to-browser-button:hover {
   background-color: #7321bc;
+  transform: scale(1.05);
+  transition: 300ms ease-in-out;
 }
 
 .menu {
@@ -150,15 +180,15 @@ body {
   }
 
   .logo {
-    width: 80px;
+    width: 45px;
   }
 
   .hamburger {
     display: flex;
   }
 
-  .login-button a {
-    height: 2.9rem;
+  .add-to-browser-button a {
+    height: 2.3rem;
     width: 14rem;
   }
 }
@@ -216,7 +246,6 @@ header {
   background-size: cover;
   position: relative;
   min-height: 110vh;
-  margin-top: 5%;
   height: 110vh;
   display: flex;
   align-items: center;
@@ -259,15 +288,16 @@ header {
   margin-top: 12rem;
   padding-left: 1.5rem;
 
-
   padding-right: 1.5rem;
-  background-color: #6366F1;
+  background-color: #6366f1;
   color: #ffffff;
   border-radius: 0.25rem;
 }
 
 .btn1:hover {
-  background-color: #4F46E5;
+  background-color: #4f46e5;
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
 }
 
 .btn2 {
@@ -278,8 +308,8 @@ header {
   padding-bottom: 0.5rem;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  background-color: #1F2937;
-  color: #9CA3AF;
+  background-color: #1f2937;
+  color: #9ca3af;
   border-radius: 0.25rem;
   border-width: 0;
 }
@@ -287,40 +317,11 @@ header {
 .btn2:hover {
   background-color: #374151;
   color: #ffffff;
+  transform: scale(1.05);
+  transition: all 300ms ease-in-out;
 }
-
 #about {
-  background-color: white;
-  padding-right: 1.5rem; 
-  background-color: #6366F1; 
-  color: #ffffff; 
-  border-radius: 0.25rem; 
- }
- .btn1:hover{
-background-color: #4F46E5; 
- }
- .btn2{
-  display: inline-flex; 
-padding-top: 0.5rem;
-margin-top: 12rem;
-margin-left: 2rem;
-padding-bottom: 0.5rem; 
-padding-left: 1.5rem;
-padding-right: 1.5rem; 
-background-color: #1F2937; 
-color: #fff; 
-border-radius: 0.25rem; 
-border-width: 0; 
- }
- .btn2:hover{
-  background-color: #374151; 
-color: #ffffff; 
- }
- #about {
   background-color: rgb(87 73 92);
-
-
-
   width: 100%;
   padding: 5px 0px;
   padding-top: 30px;
@@ -371,7 +372,6 @@ color: #ffffff;
 }
 
 footer {
-
   padding-right: 1.5rem;
   background-color: #6366f1;
   color: #ffffff;
@@ -403,7 +403,6 @@ footer {
     background-position: 0% 50%;
   }
 }
-
 
 /* footer section */
 
@@ -502,7 +501,7 @@ footer #email:hover {
       padding-right: 0.5rem;
     }
   
-    .login-button a {
+    .add-to-browser-button a {
       font-weight: 400;
       margin: 0rem -2.7rem;
       height: 2.2rem;
@@ -691,6 +690,9 @@ body {
   font-weight: 700;
   font-size: 13px;
 }
+.bold:hover {
+  color: #5e2ced;
+}
 .social-icons a {
   background-color: #eceeef;
   color: #818a91;
@@ -736,4 +738,19 @@ body {
     margin-right: 0;
     font-weight: 600;
   }
+}
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background-color: #1da1f2;
+}
+
+::-webkit-scrollbar-thumb{
+  background-clip: content-box;
+  background-color: #00488F;
+  border-radius: 15px;
+  border: 2px solid transparent;
 }

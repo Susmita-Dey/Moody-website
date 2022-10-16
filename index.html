@@ -19,10 +19,14 @@
 </head>
 </head>
 
+
 <body onload="myfunction()" id="main">
 
   <div id="load">
     <div style="background-color: white; height: 25vh; width: 100%; position: relative; top: -70px;"></div>
+  <div id="back-top-div" class="back-top-wrap">
+    <i class="fas fa-arrow-up"></i>
+
   </div>
 
   <header>
@@ -40,7 +44,7 @@
           <li><a href="#contact">CONTACT US </a></li>
         </ul>
       </div>
-      <button class="login-button"><a href="#">Add to Browser- It's free →</a></button>
+      <button class="add-to-browser-button"><a href="#">Add to Browser- It's free →</a></button>
       <div class="hamburger" id="ham">
         <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
           xmlns="http://www.w3.org/2000/svg">
@@ -79,9 +83,9 @@
     <div class="max-width">
       <div data-aos="zoom-in" class="photo"><img src="./assets/mood.jpg" alt="" height="400px" width="430px"></div>
       <div class="about-content">
-        <p data-aos="fade-left" class="text-1">Moddy is a chrome extension that will help you filter your home page of
+        <p data-aos="fade-up" class="text-1">Moddy is a chrome extension that will help you filter your home page of
           your Chrome browser according to your mood.</p>
-        <p data-aos="fade-left" class="text-2">The extension asks for your mood to help you perform better and care for
+        <p data-aos="fade-up" class="text-2">The extension asks for your mood to help you perform better and care for
           your mental health.</p>
       </div>
     </div>
@@ -156,7 +160,7 @@
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/2 w-full" data-aos="fade-up">
               <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-300 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
                 <p class="leading-relaxed mb-6">Moody has helped me immensely in eliminating distractions, prioritizing my tasks and improving my work productivity. It has helped me realize that minimizing distractions is the best way to stay in the zone and get the work done.</p>
@@ -164,14 +168,14 @@
                   <img alt="testimonial" src="/assets/testimonial-1.png" class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center">
                   <span class="flex-grow flex flex-col pl-4">
                     <span class="title-font font-medium text-white">Holden Caulfield</span>
-                    <span class="text-gray-500 text-sm">UI DEVELOPER</span>
+                    <span class="text-gray-300 text-sm">UI DEVELOPER</span>
                   </span>
                 </a>
               </div>
             </div>
             <div class="p-4 md:w-1/2 w-full" data-aos="fade-down">
               <div class="h-full bg-gray-800 bg-opacity-40 p-8 rounded">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-500 mb-4" viewBox="0 0 975.036 975.036">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="block w-5 h-5 text-gray-300 mb-4" viewBox="0 0 975.036 975.036">
                   <path d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"></path>
                 </svg>
                 <p class="leading-relaxed mb-6">The features provided here at Moody have not only helped me staying on task, but has also reduced my tension and pressure that gets built up over a period of time at work. Moody has helped me direct my energy in the right direction and I would strongly recommend this to anyone who wants to improve their productivity.</p>
@@ -179,7 +183,7 @@
                   <img alt="testimonial" src="./assets/testimonial-2.png" class="w-14 h-14 rounded-full flex-shrink-0 object-cover object-center">
                   <span class="flex-grow flex flex-col pl-4">
                     <span class="title-font font-medium text-white">Alper Kamu</span>
-                    <span class="text-gray-500 text-sm">DESIGNER</span>
+                    <span class="text-gray-300 text-sm">DESIGNER</span>
                   </span>
                 </a>
               </div>
@@ -275,7 +279,7 @@
                     <a href="moodyextension@gmail.com"
                       ><button
                         type="submit"
-                        class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+                        class="flex mx-auto text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600  hover:scale-105 hover:md:shadow-lg duration-200 ease-in rounded text-lg"
                       >
                         Submit
                       </button></a
@@ -365,15 +369,15 @@
     <div class="row">
       <div class="col-md-4 col-sm-6 col-xs-12">
         <ul class="social-icons">
-          <li><a class="github" href="https://github.com/Susmita-Dey/Moody-website"><i class="fa fa-github"></i></a></li>
-          <li><a class="twitter" href="https://twitter.com/ExtensionMoody"><i class="fa fa-twitter"></i></a></li>
-          <li><a class="linkedin" href="https://www.linkedin.com/in/moody-extension-8a3529252/"><i class="fa fa-linkedin"></i></a></li>
-          <li><a class="extensiontarget" href="https://github.com/Susmita-Dey/Moody"><i class="fa fa-puzzle-piece"></i></a></li>
+          <li><a class="github" href="https://github.com/Susmita-Dey/Moody-website" target="_blank"><i class="fa fa-github"></i></a></li>
+          <li><a class="twitter" href="https://twitter.com/ExtensionMoody" target="_blank"><i class="fa fa-twitter"></i></a></li>
+          <li><a class="linkedin" href="https://www.linkedin.com/in/moody-extension-8a3529252/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+          <li><a class="extensiontarget" href="https://github.com/Susmita-Dey/Moody" target="_blank"><i class="fa fa-puzzle-piece"></i></a></li>
         </ul>
       </div>
       <div class="col-md-8 col-sm-6 col-xs-12">
         <p class="copyright-text">Copyright &copy; 2022 All Rights Reserved by
-     <a href="mailto:moodyextension@gmail.com"><b>Moody</b></a>.
+     <a href="mailto:moodyextension@gmail.com"><b class="bold">Moody</b></a>.
         </p>
       </div>
     </div>
