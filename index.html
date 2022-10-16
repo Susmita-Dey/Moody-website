@@ -19,9 +19,14 @@
 </head>
 </head>
 
-<body>
+
+<body onload="myfunction()" id="main">
+
+  <div id="load">
+  </div>
   <div id="back-top-div" class="back-top-wrap">
     <i class="fas fa-arrow-up"></i>
+
   </div>
 
   <header>
@@ -384,6 +389,15 @@
       duration: 1000,
     });
   </script>
+ <script>
+  var preloader = document.getElementById('load');
+  var scroll = document.getElementById('main');
+  function myfunction(){
+      preloader.style.display='none';
+      scroll.style.overflow='scroll';
+  }
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 </body>
 
 </html>

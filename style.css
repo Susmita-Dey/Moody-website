@@ -8,6 +8,18 @@
 html {
   scroll-behavior: smooth;
 }
+
+#load{
+	margin: auto;
+    width: 100%;
+    height: -webkit-fill-available;
+    position: fixed;
+    background: #fff url(./assets/preload.gif) no-repeat center;
+    z-index: 9999999;
+}
+#main{
+  overflow: hidden;
+}
 /* Bottom to Top Button */
 .back-top-wrap {
   position: fixed;
@@ -24,6 +36,7 @@ html {
 .back-top-wrap:hover {
   background-color: #00a2ff;
   color: #80f7d1;
+
 }
 
 .back-top-wrap:hover .fas.fa-arrow-up {
