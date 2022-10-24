@@ -754,3 +754,15 @@ body {
   border-radius: 15px;
   border: 2px solid transparent;
 }
+@media (max-width: 370px)
+{
+  .btn1,.btn2{
+    margin-top: 16rem;
+  }
+  .btn2{
+    margin-right: 2rem;
+  }
+  .btn1{
+    margin-left: 2rem;
+  }
+} 
